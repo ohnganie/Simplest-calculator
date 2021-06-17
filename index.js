@@ -15,3 +15,21 @@ function test(tester){
   }
   test(8);
   
+  function golfScore(par, strokes) {
+    if (strokes == 1) {
+        console.log ("Hole-in-one!");
+      } else if (strokes <= par - 2) {
+        console.log ("Eagle");
+      } else if (strokes == par - 1) {
+        console.log("Birdie");
+      } else if (strokes == par) {
+        console.log ("Par");
+      } else if (strokes == par + 1) {
+        console.log ("Bogey");
+      } else if (strokes == par + 2) {
+        console.log ("Double Bogey");
+      } else {
+        console.log ("Go Home!");
+      }
+    }
+    golfScore(6, 5);
